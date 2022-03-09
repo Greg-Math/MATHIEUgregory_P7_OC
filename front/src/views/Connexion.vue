@@ -22,7 +22,7 @@
             Adresse email et/ou mot de passe invalide
         </div>
         <div class="form-row" v-if="mode == 'create' && status == 'error_create'">
-            Adresse email déja utilisée
+            Adresse email déja utilisée ou Mot de passe invalide ! <br> 8 caractères, 1 Maj, 1Min, 1chiffre et 1 caractère speciaux minimum
         </div>
         <div class="form-row">
             <button v-if="mode == 'connexion'" @click="login()" class="button" :class="{'button-disabled' : !validatedFields}">
@@ -127,7 +127,7 @@ img {
 .card {
     margin: auto;
     width: 270px;
-    height: 400px;
+    height: 450px;
     justify-content: space-around;
 }
 .form-row__input {
