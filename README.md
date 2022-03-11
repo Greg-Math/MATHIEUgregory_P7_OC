@@ -7,9 +7,8 @@ NodeJs est requis : https://nodejs.org/fr/download/
 
 MySQL Server : https://dev.mysql.com/downloads/mysql/
 
-Pour importer la base de données, dans le terminal du back :
+Il est necessaire de créer un dossier nommé "media" a la racine du back
 
-sequelize db:create    puis sequelize db:migrate
 ## Required package 
 express : npm install express
 
@@ -38,6 +37,12 @@ validator : npm install validator
 fs : npm install fs
 
 nodemon : npm install -g nodemon
+
+Pour importer la base de données, dans le terminal du back :
+
+sequelize db:create  
+
+puis sequelize db:migrate
 
 ## Required file
 .env with 
